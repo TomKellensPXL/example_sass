@@ -1,0 +1,26 @@
+$primary-color: purple;
+$secondary-color: orange;
+$tertiary-color: black;
+
+$font-lg: 18pt;
+$font-md: 12pt;
+$font-sm: 8pt;
+
+%background-primary {
+    background-color: azure;
+    color: darkorange;
+    text-align: center;
+}
+
+@mixin margin-padding($padding) {
+    margin: 3px;
+    padding: $padding;
+}
+
+@mixin transition($transitions...) {
+    transition: $transitions;
+}
+
+@function increaseFontSize($size) {
+    @return $size*2;
+}

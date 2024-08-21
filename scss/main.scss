@@ -1,0 +1,17 @@
+@use "global.scss" as *;
+@use "nav.scss";
+@use "section.scss";
+@use "footer.scss";
+
+.banner {
+    h1 {
+        font-size: $font-lg;
+        color: $secondary-color;
+        text-align: center;
+    }
+}
+
+p {
+    @extend %background-primary;
+    font-size: increaseFontSize($font-md);
+}
